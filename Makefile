@@ -8,10 +8,10 @@ all: mcmuggio unmuggio
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 mcmuggio: mcmuggio.o
-	$(CC) $(OBJ) -o mcmuggio
+	$(CC) mcmuggio.o -o mcmuggio
 
 unmuggio: unmuggio.o
-	$(CC) $(OBJ) -o unmuggio
+	$(CC) unmuggio.o -o unmuggio
 
 clean:
 	rm mcmuggio unmuggio $(OBJ)
