@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
         while ((c = getchar()) != EOF)
             putchar(muggio(c));
 
+        fflush(stdout);
         return 0;
     }
 
@@ -43,5 +44,6 @@ int main(int argc, char *argv[])
         fclose(inf);
     }
 
+    fflush(stdout);
     return 0;
 }
